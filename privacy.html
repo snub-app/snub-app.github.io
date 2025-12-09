@@ -1,101 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SNUB - Privacy Policy</title>
+  <title>Snub — Privacy Policy</title>
   <style>
-    :root{--bg:#0f0f12;--card:#111217;--accent:#FF6A00;--muted:#bfbfbf;--text:#ffffff}
-    body{background:linear-gradient(180deg,#050506,var(--bg));color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;padding:24px}
-    .wrap{max-width:880px;margin:0 auto;background:var(--card);padding:28px;border-radius:10px;box-shadow:0 6px 30px rgba(0,0,0,0.6)}
-    h1{margin-top:0;color:var(--accent);letter-spacing:1px}
-    h2{color:#fff;margin-bottom:6px}
-    p{color:var(--muted);line-height:1.6}
-    ul{color:var(--muted);line-height:1.6}
-    a{color:var(--accent);text-decoration:none}
-    .small{font-size:13px;color:#8f8f8f;margin-top:8px}
-    footer{margin-top:18px;color:#666;font-size:13px}
+    :root{
+      --bg:#000;
+      --card:#0f0f13;
+      --accent:#ff6a00;
+      --muted:#9ba0a6;
+      --text:#fff;
+    }
+    body{ background:var(--bg); color:var(--text); font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; padding:24px; }
+    .wrap{ max-width:980px; margin:0 auto; }
+    header{ border-bottom:1px solid #111; padding-bottom:8px; }
+    h1{ color:var(--accent); margin:6px 0; }
+    .card{ background:var(--card); padding:20px; border-radius:12px; border:1px solid #16161a; margin-top:16px; }
+    h2{ color:var(--accent); margin-top:12px; }
+    p, li{ color:var(--muted); line-height:1.6; }
+    ul{ margin-left:18px; }
+    a{ color:var(--accent); text-decoration:none; }
+    footer{ color:var(--muted); margin-top:18px; font-size:13px; }
+    .notice{ background:#151515; border-left:4px solid var(--accent); padding:10px; border-radius:6px; color:var(--muted); margin-top:12px; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>SNUB — Privacy Policy</h1>
-    <p class="small">Last Updated: October 2025</p>
+    <header>
+      <h1>Snub — Privacy Policy</h1>
+      <p style="color:var(--muted); margin:0;">Last updated: January 2026</p>
+    </header>
 
-    <p>Welcome to <strong>SNUB</strong>. This Privacy Policy explains what information we collect, how we use it, and your rights. SNUB is an anonymous, location-based confession app. We take privacy and safety seriously — below is how we handle data.</p>
+    <div class="card">
+      <h2>1. Who we are</h2>
+      <p>Snub is an anonymous, location-aware confession app. For support or privacy requests: <a href="mailto:snub.app@gmail.com">snub.app@gmail.com</a>.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p><strong>1.1 Data you provide</strong></p>
-    <ul>
-      <li>Date of birth (for age verification)</li>
-      <li>Anonymous user identifier (for example: <code>abc@snub.app</code>)</li>
-      <li>Confessions, moods, categories, hashtags you post</li>
-      <li>Reports you submit about other posts</li>
-    </ul>
+      <h2>2. Age</h2>
+      <p>Snub is intended for users aged <strong>18 years or older</strong>. We do not knowingly permit minors to register.</p>
 
-    <p><strong>1.2 Automatically collected data</strong></p>
-    <ul>
-      <li>Approximate location (only if you grant permission)</li>
-      <li>Device information (OS, model, app version)</li>
-      <li>Usage analytics (app opens, feature usage, session length)</li>
-      <li>Crash logs and performance metrics</li>
-    </ul>
+      <h2>3. Data we collect</h2>
+      <ul>
+        <li><strong>Account identifiers:</strong> Username (user_id), Firebase UID.</li>
+        <li><strong>Device identifiers:</strong> IDFV and other SDK-provided identifiers used for app functionality and diagnostics.</li>
+        <li><strong>Coarse location:</strong> Approximate location used to show nearby confessions. Precise GPS is not stored unless a user explicitly tags a post.</li>
+        <li><strong>User content:</strong> Confessions, comments, mood tags, timestamps, and any voluntarily provided media.</li>
+        <li><strong>Usage & diagnostics:</strong> Analytics and crash logs (if enabled).</li>
+      </ul>
 
-    <p><strong>1.3 Content you post</strong></p>
-    <p>All confessions, comments, likes and related metadata are stored in our database. Confessions may be set to auto-delete after 24 hours based on app rules.</p>
+      <h2>4. How we use data</h2>
+      <p>We use your data for core functionality, moderation, safety, analytics, push notifications, and to respond to support requests. Coarse location is used only to show local content and is not linked to personal identity.</p>
 
-    <h2>2. How We Use Your Information</h2>
-    <ul>
-      <li>To operate and improve SNUB (deliver features, show local confessions).</li>
-      <li>To enforce age restrictions and moderation policies.</li>
-      <li>To detect spam, abuse, or other policy violations.</li>
-      <li>To analyse and improve app performance and user experience.</li>
-    </ul>
+      <h2>5. Moderation & automated filtering</h2>
+      <p>Snub uses keyword filters and AI-based moderation (e.g., OpenAI moderation) to detect abusive or explicit content. Content violating policies may be blocked before posting or removed after review. Reported content is reviewed and actioned within <strong>24 hours</strong>.</p>
 
-    <h2>3. Moderation & Safety</h2>
-    <p>We use automated and manual moderation to keep SNUB safe:</p>
-    <ul>
-      <li>Automated filters & AI moderation (e.g. OpenAI moderation models)</li>
-      <li>Custom profanity lists (English, Tamil, other supported languages)</li>
-      <li>Community reporting and human review for flagged content</li>
-    </ul>
-    <p>If content is flagged as harmful, we may hide it, mark it as <em>needs_review</em>, or remove it entirely.</p>
+      <div class="notice">
+        <strong>Note:</strong> Despite safeguards, anonymous UGC can be unpredictable. Use the Report button to flag harmful content, and contact support at <a href="mailto:snub.app@gmail.com">snub.app@gmail.com</a> for urgent issues.
+      </div>
 
-    <h2>4. Location Data</h2>
-    <p>Location is optional. If you enable it, we use approximate location to show nearby confessions. We do not store precise GPS coordinates permanently without explicit consent.</p>
+      <h2>6. Linking data to identity</h2>
+      <p>The data we collect (user id, device id, coarse location) is not linked to a user’s real-world identity unless you voluntarily include identifying details in a confession. We do not require phone numbers or emails at signup.</p>
 
-    <h2>5. Data Sharing & Third Parties</h2>
-    <p>We do not sell personal data. We may share data only in limited situations:</p>
-    <ul>
-      <li>With law enforcement where required by law</li>
-      <li>With service providers and partners that help operate the app (they must follow confidentiality rules)</li>
-    </ul>
+      <h2>7. Data retention & deletion</h2>
+      <p>Confessions are removed from public feed after <strong>24 hours</strong>. You may permanently delete your account from within the app (Profile → Settings → Delete Account), which permanently removes your profile and authored content. Some logs may persist briefly for operational reasons.</p>
 
-    <h2>6. Data Retention</h2>
-    <p>Confessions are generally set to auto-delete after 24 hours. Data necessary for moderation, dispute resolution, fraud prevention, or legal compliance may be retained longer as required by law.</p>
+      <h2>8. Third-party services</h2>
+      <p>We use services such as Firebase (Auth, Firestore, Cloud Functions, Analytics, Crashlytics) and OpenAI (moderation). These providers process data under their own privacy policies to provide required services.</p>
 
-    <h2>7. Your Rights</h2>
-    <p>Depending on your jurisdiction, you may request:</p>
-    <ul>
-      <li>Access to your data</li>
-      <li>Deletion of your account and data</li>
-      <li>Correction of inaccurate information</li>
-      <li>Opt-out of analytics or marketing</li>
-    </ul>
-    <p>To exercise these rights, contact us at: <a href="mailto:snub.app@gmail.com">snub.app@gmail.com</a></p>
+      <h2>9. Advertising & tracking</h2>
+      <p>We currently do not serve third-party ads or engage in cross-app tracking. If we introduce ads, we will update this policy and seek user consent as required.</p>
 
-    <h2>8. Children’s Privacy</h2>
-    <p>SNUB is for users <strong>17 years or older</strong>. We do not knowingly collect information from children under 17. If we become aware of a minor using the service, we will remove the account and related content.</p>
+      <h2>10. Your rights</h2>
+      <ul>
+        <li><strong>Access & correction:</strong> Update username/profile in app settings.</li>
+        <li><strong>Delete account:</strong> Use in-app deletion or contact <a href="mailto:snub.app@gmail.com">snub.app@gmail.com</a>.</li>
+        <li><strong>Contact:</strong> For privacy questions email <a href="mailto:snub.app@gmail.com">snub.app@gmail.com</a>.</li>
+      </ul>
 
-    <h2>9. Security</h2>
-    <p>We store data securely in Firebase (Firestore, Auth, Storage) and use industry-standard protections. However, no system is 100% secure — we maintain monitoring and incident response procedures.</p>
+      <h2>11. Changes</h2>
+      <p>We may update this policy. Material changes will be announced in the app or via email where applicable.</p>
 
-    <h2>10. Changes to this Policy</h2>
-    <p>We may update this Privacy Policy. We will show the date of last update and, where required, notify users of material changes.</p>
-
-    <footer>
-      <p>SNUB — Anonymous Confessions App. For data requests or legal notices: <a href="mailto:snub.app@gmail.com">snub.app@gmail.com</a></p>
-    </footer>
+      <footer>© 2025 Snub Technologies. Contact: <a href="mailto:snub.app@gmail.com">snub.app@gmail.com</a></footer>
+    </div>
   </div>
 </body>
 </html>
