@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snub</title>
+
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .logo {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .tagline {
+      font-size: 18px;
+      opacity: 0.85;
+      margin-bottom: 40px;
+    }
+    a.button {
+      display: block;
+      margin: 12px auto;
+      padding: 14px 20px;
+      width: 240px;
+      background: #FD812A;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="logo">SNUB</div>
+  <div class="tagline">
+    Anonymous confessions from people near you.<br>
+    Disappear in 24 hours.
+  </div>
+
+  <a class="button" id="ios" href="#">Download on App Store</a>
+  <a class="button" id="android" href="#">Get it on Google Play</a>
+
+  <script>
+    const iosLink = "https://apps.apple.com/app/idXXXXXXXXX";
+    const androidLink = "https://play.google.com/store/apps/details?id=your.package.name";
+
+    document.getElementById("ios").href = iosLink;
+    document.getElementById("android").href = androidLink;
+
+    const ua = navigator.userAgent || navigator.vendor;
+
+    if (/iPhone|iPad|iPod/i.test(ua)) {
+      window.location.href = iosLink;
+    } else if (/Android/i.test(ua)) {
+      window.location.href = androidLink;
+    }
+  </script>
+
+</body>
+</html>
